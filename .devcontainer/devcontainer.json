@@ -1,0 +1,16 @@
+{
+    "name": "Mm Codespace",
+    "image": "mcr.microsoft.com/vscode/devcontainers/python:3.8",
+    "postStartCommand": "echo '*'; echo '*         @LEGENDXOPL Bot Running      *'; echo '*'; python /workspaces/Mm/LEGEND.py",
+    "postCreateCommand": "pip install pymongo python-telegram-bot pyTelegramBotAPI certifi && chmod +x /workspaces/Mm/*",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "python.pythonPath": "/usr/local/bin/python"
+            },
+            "extensions": [
+                "ms-python.python"
+            ]
+        }
+    }
+}
